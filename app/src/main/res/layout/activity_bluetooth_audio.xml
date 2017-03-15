@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bluetooth_audio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    tools:context="com.example.home.newapp.bluetooth_audio">
+
+    <LinearLayout
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="  Bluetooth"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="Helvetica"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            />
+        <Button
+            android:id="@+id/bl_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Switch on"
+            android:onClick="bl_switch"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_bl"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toggle"
+        >
+    </ListView>
+</RelativeLayout>

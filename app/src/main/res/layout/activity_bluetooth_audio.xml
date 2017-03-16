@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="2dp"
-    tools:context="com.example.home.newapp.bluetooth_audio">
+    tools:context="com.example.home.networking.bluetooth_audio">
 
     <LinearLayout
         android:id="@+id/toggle"

@@ -27,7 +27,7 @@
             android:layout_height="50dp"
             android:textAlignment="center"
             android:textSize="30dp"
-            android:text="Enter the ipaddress"
+            android:text="Enter the ip address"
             android:id="@+id/textView" />
         <LinearLayout
             android:id="@+id/input"
